@@ -60,7 +60,7 @@ if (!atm.validatePIN(enteredPIN)) {
     return;
 }
      
-System.out.println("✅ PIN verified. Welcome!");
+System.out.println(" PIN verified. Welcome!");
 
 
  System.out.println("CHOOSE THE OPTION ");
