@@ -54,7 +54,16 @@ class Main
     atm.setbalance(5000);
     System.out.println("Enter PIN : \n");
     int enteredPIN = sc.nextInt();
-      System.out.println("CHOOSE THE OPTION ");
+
+if (!atm.validatePIN(enteredPIN)) {
+    System.out.println("Invalid PIN. Please try again.");
+    return;
+}
+     
+System.out.println("✅ PIN verified. Welcome!");
+
+
+ System.out.println("CHOOSE THE OPTION ");
      
       boolean looping = true;
       while(looping)
